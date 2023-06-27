@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :toys, only: [:index, :create, :update]
+  #Donate a toy to Goodwill (and delete it from our database) - Added Destroy Route
+  resources :toys, only: [:index, :create, :update, :destroy]
 end
